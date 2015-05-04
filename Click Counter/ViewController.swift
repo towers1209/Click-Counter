@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         if (abs(count)%2==0) {
             super.view.backgroundColor=UIColor.whiteColor()
             increaseButton.setTitleColor(UIColor.greenColor(), forState: .Normal)
+            decreaseButton.setTitleColor(UIColor.redColor(), forState: .Normal) // This ensures that the ""other" button has the right color when the background is white
         }
         else {
             super.view.backgroundColor=UIColor.greenColor()
@@ -58,6 +59,7 @@ class ViewController: UIViewController {
         if (abs(count)%2==0) {
             super.view.backgroundColor=UIColor.whiteColor()
             decreaseButton.setTitleColor(UIColor.redColor(), forState: .Normal)
+            increaseButton.setTitleColor(UIColor.greenColor(), forState: .Normal)  // This ensures that the ""other" button has the right color when the background is white
         }
         else {
             super.view.backgroundColor=UIColor.redColor()
