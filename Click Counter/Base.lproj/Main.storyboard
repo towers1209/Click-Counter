@@ -16,17 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="futura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K4-qB-vWW">
-                                <rect key="frame" x="250" y="221" width="100" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K4-qB-vWW">
+                                <rect key="frame" x="250" y="171" width="100" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Lta-Vv-vlq"/>
+                                    <constraint firstAttribute="width" constant="100" id="WT3-UT-oa1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-jr-wAC">
-                                <rect key="frame" x="250" y="341" width="100" height="30"/>
+                                <rect key="frame" x="250" y="298" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HhX-cN-yNS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Decrease">
                                     <color key="titleColor" red="1" green="0.2731590056" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,9 +40,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cj-Vv-IYW">
-                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <rect key="frame" x="250" y="258" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="rgu-3L-yyj"/>
+                                    <constraint firstAttribute="height" constant="30" id="8Lg-x5-mum"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Increase">
@@ -50,22 +53,33 @@
                                     <action selector="increaseCount:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NP2-t5-vMo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGS-pj-6PB">
+                                <rect key="frame" x="279" y="123" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="f7h-SH-4o8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.54485532668014125" green="1" blue="0.45951719280188641" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dXP-jr-wAC" secondAttribute="bottom" constant="229" id="06Z-JU-pjY"/>
-                            <constraint firstItem="dXP-jr-wAC" firstAttribute="trailing" secondItem="2K4-qB-vWW" secondAttribute="trailing" id="0yt-dt-iKR"/>
-                            <constraint firstItem="0cj-Vv-IYW" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="2qP-7P-egt"/>
-                            <constraint firstItem="dXP-jr-wAC" firstAttribute="top" secondItem="0cj-Vv-IYW" secondAttribute="bottom" constant="26" id="Aku-Ps-KSh"/>
-                            <constraint firstItem="dXP-jr-wAC" firstAttribute="leading" secondItem="0cj-Vv-IYW" secondAttribute="leading" id="Bpa-YD-Kp2"/>
-                            <constraint firstItem="dXP-jr-wAC" firstAttribute="trailing" secondItem="0cj-Vv-IYW" secondAttribute="trailing" id="SiN-6E-hdO"/>
-                            <constraint firstItem="dXP-jr-wAC" firstAttribute="leading" secondItem="2K4-qB-vWW" secondAttribute="leading" id="ThG-6s-sI0"/>
-                            <constraint firstItem="2K4-qB-vWW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="201" id="ohf-Wd-xsi"/>
-                            <constraint firstItem="2K4-qB-vWW" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tfo-Pr-wuQ"/>
+                            <constraint firstItem="2K4-qB-vWW" firstAttribute="trailing" secondItem="0cj-Vv-IYW" secondAttribute="trailing" id="Btw-Mt-QSh"/>
+                            <constraint firstItem="tGS-pj-6PB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="103" id="Gx6-bN-RVg"/>
+                            <constraint firstItem="dXP-jr-wAC" firstAttribute="leading" secondItem="0cj-Vv-IYW" secondAttribute="leading" id="PeM-ia-w0Z"/>
+                            <constraint firstItem="2K4-qB-vWW" firstAttribute="top" secondItem="tGS-pj-6PB" secondAttribute="bottom" constant="27" id="Qeb-Vs-Rga"/>
+                            <constraint firstItem="dXP-jr-wAC" firstAttribute="top" secondItem="0cj-Vv-IYW" secondAttribute="bottom" constant="10" id="VZ2-cE-Lad"/>
+                            <constraint firstItem="2K4-qB-vWW" firstAttribute="centerX" secondItem="tGS-pj-6PB" secondAttribute="centerX" id="hE8-g7-u55"/>
+                            <constraint firstItem="0cj-Vv-IYW" firstAttribute="top" secondItem="2K4-qB-vWW" secondAttribute="bottom" constant="52" id="vNe-1f-9GP"/>
+                            <constraint firstItem="dXP-jr-wAC" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="yMn-M9-u8I"/>
+                            <constraint firstItem="2K4-qB-vWW" firstAttribute="leading" secondItem="0cj-Vv-IYW" secondAttribute="leading" id="zFA-Ru-dKw"/>
+                            <constraint firstItem="0cj-Vv-IYW" firstAttribute="trailing" secondItem="dXP-jr-wAC" secondAttribute="trailing" id="zHC-yS-Z37"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="2K4-qB-vWW" id="YDd-nv-BLN"/>
+                        <outlet property="countLabel1" destination="tGS-pj-6PB" id="jTo-Om-2cA"/>
                         <outlet property="decreaseButton" destination="dXP-jr-wAC" id="Rme-U4-pEy"/>
                         <outlet property="increaseButton" destination="0cj-Vv-IYW" id="hxz-xt-Nli"/>
                         <outlet property="view" destination="kh9-bI-dsS" id="KwW-hd-ujZ"/>

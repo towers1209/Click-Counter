@@ -6,6 +6,16 @@
 //  Copyright (c) 2015 towers1209. All rights reserved.
 //
 
+// The single-view illustrative app discussed in class contain the following:
+//  1. A button
+//  2. A label for displaying the number of clicks done on the button
+
+// Lesson 1 > Experimenting with Target Action has the following instructions for experimentation:
+//  1. Add an additional label and have it increment with the first
+//  2. Add a decrement button
+//  3. Add an action that toggles the background color of the view with each click
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var increaseButton: UIButton!
     @IBOutlet weak var decreaseButton: UIButton!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var countLabel1: UILabel!
     var count = 0;
     
     override func viewDidLoad() {
@@ -29,6 +40,7 @@ class ViewController: UIViewController {
     @IBAction func increaseCount(sender: UIButton) {
         count+=1;
         countLabel.text="\(count)"
+        countLabel1.text="\(count)"
         if (abs(count)%2==0) {
             super.view.backgroundColor=UIColor.whiteColor()
             increaseButton.setTitleColor(UIColor.greenColor(), forState: .Normal)
@@ -42,6 +54,7 @@ class ViewController: UIViewController {
     @IBAction func decreaseCount(sender: UIButton) {
         count-=1;
         countLabel.text="\(count)"
+        countLabel1.text="\(count)"
         if (abs(count)%2==0) {
             super.view.backgroundColor=UIColor.whiteColor()
             decreaseButton.setTitleColor(UIColor.redColor(), forState: .Normal)
